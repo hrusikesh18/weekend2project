@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../javascript/account.js"></script>
+    <title>Website</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column" style="width: 20%;">
+            <div class="leftside">
+                <nav style="width: 200px; height: 100vh;">
+                    <div class="logo-container">
+                        <img src="../media/logow.png" alt="Site Logo" class="logo">
+                        <p class="title"
+                            style="font-size: 22px; font-family: Lucidahandwriting, cursive; margin-left: 5px;">
+                            WorkSpace</p>
+                    </div>
+                    <ul>
+                        <li></li>
+                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="customers.html"><i class="fas fa-user-friends"></i> Customers</a></li>
+                        <li><a href="departments.html"><i class="far fa-address-card"></i> Departments</a></li>
+                        <li><a href="media.html"><i class="fas fa-images"></i> Media</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li><a href="account.html" class="active"><i class="fas fa-user-alt"></i> My Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="column" style="width: 84.099%;">
+            <div class="rightside">
+                <header>
+                    <div class="search">
+                        <input type="text" placeholder="Search in Account">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </header>
+                <div class="main-content">
+                    <div class="media">
+                        
+                        <img src="../media/user.jpg">
+                        <a style="margin-top: 105px;" href="#" class="fa fa-pencil" onclick="img()"></a>
+                        
+                    </div>
+                    <form>
+                        <h3>Name:</h3>
+                        <input type="text" value="John Doe" id="name"><a href="#" class="fa fa-pencil"
+                            style="font-size: 35px; color: black;" onClick="editName()"></a>
+                        <h3>Email:</h3>
+                        <input type="email" value="JohnDoe@gmail.com" id="email"><a href="#" class="fa fa-pencil"
+                            style="font-size: 35px; color: black;" onClick="editEmail()"></a>
+                        <h3>Phone-no:</h3>
+                        <input type="text" value="7775556662" id="pno"><a href="#" class="fa fa-pencil"
+                            style="font-size: 35px; color: black;" onClick="editPh()"></a>
+                        <h3>DOB:</h3>
+                        <input type="text" value="18 aug 2000" id="dob"><a href="#" class="fa fa-pencil"
+                            style="font-size: 35px;color: black;" onClick="editDob()"></a><br><br>
+                        <button>CANCEL</button>
+                        <button  onclick="save()">SAVE</button>
+                        
+                        <br><br><br><br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
