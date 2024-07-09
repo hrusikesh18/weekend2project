@@ -29,6 +29,12 @@ function editName() {
   function save(){
     window.alert("Changes have been updated");
   }
+  function cancel(){
+    document.getElementById('name').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('pno').value = "";
+    document.getElementById('dob').value = "";
+  }
   function img() {
     prompt("Please enter your image type:");
   }
