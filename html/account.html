@@ -70,20 +70,20 @@
                     </div>
                     <form>
                         <h3>Name:</h3>
-                        <input type="text" value="John Doe" id="name"><a href="#" class="fa fa-pencil"
-                            style="font-size: 35px; color: black;" onClick="editName()"></a>
+                        <input type="text" value="John Doe" id="name" readonly>
+                        <a href="#" id="editName" class="fa fa-pencil" style="font-size: 35px; color: black;" onclick="editField('name')"></a>
                         <h3>Email:</h3>
-                        <input type="email" value="JohnDoe@gmail.com" id="email"><a href="#" class="fa fa-pencil"
-                            style="font-size: 35px; color: black;" onClick="editEmail()"></a>
+                        <input type="email" value="JohnDoe@gmail.com" id="email" readonly>
+                        <a href="#" id="editEmail" class="fa fa-pencil" style="font-size: 35px; color: black;" onclick="editField('email')"></a>
                         <h3>Phone-no:</h3>
-                        <input type="text" value="7775556662" id="pno"><a href="#" class="fa fa-pencil"
-                            style="font-size: 35px; color: black;" onClick="editPh()"></a>
+                        <input type="text" value="7775556662" id="pno" readonly>
+                        <a href="#" id="editPno" class="fa fa-pencil" style="font-size: 35px; color: black;" onclick="editField('pno')"></a>
                         <h3>DOB:</h3>
-                        <input type="text" value="18 aug 2000" id="dob"><a href="#" class="fa fa-pencil"
-                            style="font-size: 35px;color: black;" onClick="editDob()"></a><br><br>
-                        <button onclick="cancel()">CANCEL</button>
-                        <button  onclick="save()">SAVE</button>
-                        
+                        <input type="text" value="18 aug 2000" id="dob" readonly>
+                        <a href="#" id="editDob" class="fa fa-pencil" style="font-size: 35px;color: black;" onclick="editField('dob')"></a>
+                        <br><br>
+                        <button type="button" onclick="cancel()">CANCEL</button>
+                        <button type="button" onclick="save()">SAVE</button>
                         <br><br><br><br><br>
                     </form>
                 </div>
