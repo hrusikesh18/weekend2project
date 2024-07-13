@@ -64,10 +64,9 @@
                 </header>
                 <div class="main-content">
                     <div class="media">
-                        
-                        <img src="../media/user.jpg">
-                        <a style="margin-top: 105px;" href="#" class="fa fa-pencil" onclick="img()"></a>
-                        
+                        <img src="../media/user.jpg" id="profileImage">
+                        <a style="margin-top: 105px;" href="#" class="fa fa-pencil" onclick="editImage()"></a>
+                        <input type="file" id="imageInput" style="display: none;" accept="image/*" onchange="loadImage(event)">
                     </div>
                     <form>
                         <h3>Name:</h3>

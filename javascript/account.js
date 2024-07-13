@@ -1,40 +1,27 @@
-function editName() {
-    let currentName = document.getElementById('name').value;
-    let newName = prompt("Please enter your new name:", currentName);
-    if (newName) {
-      document.getElementById('name').value = newName;
-    }
+function save(){
+  window.alert("Changes have been updated");
+}
+function cancel(){
+  document.getElementById('name').value = "John Doe";
+  document.getElementById('email').value = "JohnDoe@gmail.com";
+  document.getElementById('pno').value = "7775556662";
+  document.getElementById('dob').value = "18 aug 2000";
+}
+
+function editField(fieldId) {
+  const field = document.getElementById(fieldId);
+  field.readOnly = !field.readOnly;
+  if (!field.readOnly) {
+      field.focus();
   }
-  function editEmail() {
-    let currentName = document.getElementById('email').value;
-    let newName = prompt("Please enter your new email-id:", currentName);
-    if (newName) {
-      document.getElementById('email').value = newName;
-    }
-  }
-  function editPh() {
-    let currentName = document.getElementById('pno').value;
-    let newName = prompt("Please enter your new phone-no:", currentName);
-    if (newName) {
-      document.getElementById('pno').value = newName;
-    }
-  }
-  function editDob() {
-    let currentName = document.getElementById('dob').value;
-    let newName = prompt("Please enter your new dob:", currentName);
-    if (newName) {
-      document.getElementById('dob').value = newName;
-    }
-  }
-  function save(){
-    window.alert("Changes have been updated");
-  }
-  function cancel(){
-    document.getElementById('name').value = "";
-    document.getElementById('email').value = "";
-    document.getElementById('pno').value = "";
-    document.getElementById('dob').value = "";
-  }
-  function img() {
-    prompt("Please enter your image type:");
-  }
+}
+
+function editImage() {
+  document.getElementById('imageInput').click();
+}
+
+function loadImage(event) {
+  const image = document.getElementById('profileImage');
+  image.src = URL.createObjectURL(event.target.files[0]);
+  image.onload = () => URL.revokeObjectURL(image.src); // Free memory
+}
